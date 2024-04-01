@@ -1,5 +1,9 @@
 <div>
-  <header></header>
+  <header class="main-header"></header>
 
-  <h1>Ola</h1>
+  <main>
+    <ng-container *ngFor="let job of jobs">
+      <app-cart-job [Job]="job"></app-cart-job>
+    </ng-container>
+  </main>
 </div>

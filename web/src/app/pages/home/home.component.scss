@@ -1,3 +1,18 @@
-header {
+@import "../../styles/variable.sass";
+.main-header {
   background-image: url('../../../assets/images/bg-header-desktop.svg');
+
+  height: 100px;
+  width: 100vw;
+  background-color: $primary-color;
+}
+
+main {
+  padding: 100px;
+  background-color: $neutral-background;
+}
+@media screen and (min-width: 768px) {
+  .main-header {
+    background-image : url('../../../assets/images/bg-header-mobile.svg');
+  }
 }
